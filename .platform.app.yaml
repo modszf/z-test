@@ -1,1 +1,13 @@
-type: 'nodejs:18'
+name: app
+
+# The runtime the application uses. Strapi not yet suppported with NodeJS 14.
+type: nodejs:12
+
+# Use Yarn instead of npm.
+build:
+  flavor: none
+
+# Build dependencies.
+dependencies:
+  nodejs:
+    yarn: "1.22.5"
